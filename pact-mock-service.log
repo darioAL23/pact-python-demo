@@ -1,0 +1,134 @@
+I, [2023-05-09T15:44:48.859332 #21981]  INFO -- : Cleared interactions
+I, [2023-05-09T15:44:48.877038 #21981]  INFO -- : Registered expected interaction GET /users/UserA
+D, [2023-05-09T15:44:48.878256 #21981] DEBUG -- : {
+  "description": "a request for UserA",
+  "providerState": "UserA exists and is not an administrator",
+  "request": {
+    "method": "get",
+    "path": "/users/UserA"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+    },
+    "body": {
+      "json_class": "Pact::SomethingLike",
+      "contents": {
+        "name": "UserA",
+        "id": {
+          "json_class": "Pact::Term",
+          "data": {
+            "generate": "00000000-0000-4000-a000-000000000000",
+            "matcher": {
+              "json_class": "Regexp",
+              "o": 0,
+              "s": "^[a-f0-9]{8}-?[a-f0-9]{4}-?4[a-f0-9]{3}-?[89ab][a-f0-9]{3}-?[a-f0-9]{12}\\Z"
+            }
+          }
+        },
+        "created_on": {
+          "json_class": "Pact::Term",
+          "data": {
+            "generate": "2016-12-15T20:16:01",
+            "matcher": {
+              "json_class": "Regexp",
+              "o": 0,
+              "s": "\\d+-\\d+-\\d+T\\d+:\\d+:\\d+"
+            }
+          }
+        },
+        "admin": false
+      }
+    }
+  },
+  "metadata": null
+}
+I, [2023-05-09T15:44:48.895807 #21981]  INFO -- : Received request GET /users/UserA
+D, [2023-05-09T15:44:48.896633 #21981] DEBUG -- : {
+  "path": "/users/UserA",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Host": "localhost:1234",
+    "User-Agent": "python-requests/2.30.0",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2023-05-09T15:44:48.897993 #21981]  INFO -- : Found matching response for GET /users/UserA
+D, [2023-05-09T15:44:48.899123 #21981] DEBUG -- : {
+  "status": 200,
+  "headers": {
+  },
+  "body": {
+    "json_class": "Pact::SomethingLike",
+    "contents": {
+      "name": "UserA",
+      "id": {
+        "json_class": "Pact::Term",
+        "data": {
+          "generate": "00000000-0000-4000-a000-000000000000",
+          "matcher": {
+            "json_class": "Regexp",
+            "o": 0,
+            "s": "^[a-f0-9]{8}-?[a-f0-9]{4}-?4[a-f0-9]{3}-?[89ab][a-f0-9]{3}-?[a-f0-9]{12}\\Z"
+          }
+        }
+      },
+      "created_on": {
+        "json_class": "Pact::Term",
+        "data": {
+          "generate": "2016-12-15T20:16:01",
+          "matcher": {
+            "json_class": "Regexp",
+            "o": 0,
+            "s": "\\d+-\\d+-\\d+T\\d+:\\d+:\\d+"
+          }
+        }
+      },
+      "admin": false
+    }
+  }
+}
+I, [2023-05-09T15:44:48.915981 #21981]  INFO -- : Verifying - interactions matched
+I, [2023-05-09T15:44:48.935194 #21981]  INFO -- : Writing pact for UserService to /home/darioperez/pact-python-demo/tests/userserviceclient-userservice.json
+I, [2023-05-09T15:44:48.963143 #21981]  INFO -- : Cleared interactions
+I, [2023-05-09T15:44:48.981537 #21981]  INFO -- : Registered expected interaction GET /users/UserA
+D, [2023-05-09T15:44:48.982562 #21981] DEBUG -- : {
+  "description": "a request for UserA",
+  "providerState": "UserA does not exist",
+  "request": {
+    "method": "get",
+    "path": "/users/UserA"
+  },
+  "response": {
+    "status": 404,
+    "headers": {
+    }
+  },
+  "metadata": null
+}
+I, [2023-05-09T15:44:49.001778 #21981]  INFO -- : Received request GET /users/UserA
+D, [2023-05-09T15:44:49.002595 #21981] DEBUG -- : {
+  "path": "/users/UserA",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Host": "localhost:1234",
+    "User-Agent": "python-requests/2.30.0",
+    "Accept-Encoding": "gzip, deflate",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2023-05-09T15:44:49.003308 #21981]  INFO -- : Found matching response for GET /users/UserA
+D, [2023-05-09T15:44:49.003845 #21981] DEBUG -- : {
+  "status": 404,
+  "headers": {
+  }
+}
+I, [2023-05-09T15:44:49.019071 #21981]  INFO -- : Verifying - interactions matched
+I, [2023-05-09T15:44:49.035409 #21981]  INFO -- : Writing pact for UserService to /home/darioperez/pact-python-demo/tests/userserviceclient-userservice.json

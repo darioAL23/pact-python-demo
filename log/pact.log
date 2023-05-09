@@ -1,0 +1,67 @@
+# Logfile created on 2023-05-09 12:04:35 +0200 by logger.rb/v1.5.3
+I, [2023-05-09T12:04:35.470705 #19157]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has status code 200'
+I, [2023-05-09T12:04:35.478177 #19157]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"UserA exists and is not an administrator"}]}, see debug logs for body
+D, [2023-05-09T12:04:35.478373 #19157] DEBUG -- : body :
+I, [2023-05-09T12:04:35.486091 #19157]  INFO -- : Received response with status: 200, headers: {"Server"=>"Werkzeug/2.3.4 Python/3.8.10", "Date"=>"Tue, 09 May 2023 10:04:35 GMT", "Content-Type"=>"application/json", "Content-Length"=>"108", "Connection"=>"close"}, see debug logs for body
+D, [2023-05-09T12:04:35.486151 #19157] DEBUG -- : body: {
+  "admin": false,
+  "created_on": "Tue, 09 May 2023 12:04:35 GMT",
+  "id": "1234567",
+  "name": "UserA"
+}
+
+I, [2023-05-09T12:04:35.490478 #19157]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA does not exist a request for UserA with GET /users/UserA returns a response which has status code 404'
+I, [2023-05-09T12:04:35.497669 #19157]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"UserA does not exist"}]}, see debug logs for body
+D, [2023-05-09T12:04:35.498053 #19157] DEBUG -- : body :
+I, [2023-05-09T12:04:35.500764 #19157]  INFO -- : Received response with status: 404, headers: {"Server"=>"Werkzeug/2.3.4 Python/3.8.10", "Date"=>"Tue, 09 May 2023 10:04:35 GMT", "Content-Type"=>"text/html; charset=utf-8", "Content-Length"=>"207", "Connection"=>"close"}, see debug logs for body
+D, [2023-05-09T12:04:35.500830 #19157] DEBUG -- : body: <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+I, [2023-05-09T15:36:56.037508 #20221]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has status code 200'
+I, [2023-05-09T15:36:56.066198 #20221]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"UserA exists and is not an administrator"}]}, see debug logs for body
+D, [2023-05-09T15:36:56.066458 #20221] DEBUG -- : body :
+I, [2023-05-09T15:36:56.117240 #20221]  INFO -- : Received response with status: 200, headers: {"Server"=>"Werkzeug/2.3.4 Python/3.8.10", "Date"=>"Tue, 09 May 2023 13:36:56 GMT", "Content-Type"=>"application/json", "Content-Length"=>"108", "Connection"=>"close"}, see debug logs for body
+D, [2023-05-09T15:36:56.117559 #20221] DEBUG -- : body: {
+  "admin": false,
+  "created_on": "Tue, 09 May 2023 15:36:56 GMT",
+  "id": "1234567",
+  "name": "UserA"
+}
+
+I, [2023-05-09T15:36:56.132344 #20221]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA does not exist a request for UserA with GET /users/UserA returns a response which has status code 404'
+I, [2023-05-09T15:36:56.138911 #20221]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"UserA does not exist"}]}, see debug logs for body
+D, [2023-05-09T15:36:56.139095 #20221] DEBUG -- : body :
+I, [2023-05-09T15:36:56.146622 #20221]  INFO -- : Received response with status: 404, headers: {"Server"=>"Werkzeug/2.3.4 Python/3.8.10", "Date"=>"Tue, 09 May 2023 13:36:56 GMT", "Content-Type"=>"text/html; charset=utf-8", "Content-Length"=>"207", "Connection"=>"close"}, see debug logs for body
+D, [2023-05-09T15:36:56.147089 #20221] DEBUG -- : body: <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
+I, [2023-05-09T15:45:36.330549 #22543]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has status code 200'
+I, [2023-05-09T15:45:36.514286 #22543]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has a matching body'
+I, [2023-05-09T15:45:36.710310 #22543]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA does not exist a request for UserA with GET /users/UserA returns a response which has status code 404'
+I, [2023-05-09T15:46:16.197027 #22668]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA exists and is not an administrator a request for UserA with GET /users/UserA returns a response which has status code 200'
+I, [2023-05-09T15:46:16.207858 #22668]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"UserA exists and is not an administrator"}]}, see debug logs for body
+D, [2023-05-09T15:46:16.208081 #22668] DEBUG -- : body :
+I, [2023-05-09T15:46:16.250810 #22668]  INFO -- : Received response with status: 200, headers: {"Server"=>"Werkzeug/2.3.4 Python/3.8.10", "Date"=>"Tue, 09 May 2023 13:46:16 GMT", "Content-Type"=>"application/json", "Content-Length"=>"108", "Connection"=>"close"}, see debug logs for body
+D, [2023-05-09T15:46:16.251073 #22668] DEBUG -- : body: {
+  "admin": false,
+  "created_on": "Tue, 09 May 2023 15:46:16 GMT",
+  "id": "1234567",
+  "name": "UserA"
+}
+
+I, [2023-05-09T15:46:16.268179 #22668]  INFO -- : Running example 'Verifying a pact between UserServiceClient and UserService Given UserA does not exist a request for UserA with GET /users/UserA returns a response which has status code 404'
+I, [2023-05-09T15:46:16.274506 #22668]  INFO -- : Sending GET request to path: "/users/UserA" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"UserA does not exist"}]}, see debug logs for body
+D, [2023-05-09T15:46:16.274686 #22668] DEBUG -- : body :
+I, [2023-05-09T15:46:16.279414 #22668]  INFO -- : Received response with status: 404, headers: {"Server"=>"Werkzeug/2.3.4 Python/3.8.10", "Date"=>"Tue, 09 May 2023 13:46:16 GMT", "Content-Type"=>"text/html; charset=utf-8", "Content-Length"=>"207", "Connection"=>"close"}, see debug logs for body
+D, [2023-05-09T15:46:16.279618 #22668] DEBUG -- : body: <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+
